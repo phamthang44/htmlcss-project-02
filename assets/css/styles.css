@@ -20,6 +20,21 @@ body {
 
 /* Common */
 
+.word-break {
+  word-break: break-all;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
 .desc {
   color: #5f5b53;
 }
@@ -368,6 +383,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 30px;
+  padding-right: 6px;
 }
 .popular .info .desc {
   color: #5f5b53;
@@ -403,4 +419,21 @@ a {
   background: var(--primary-color);
   cursor: pointer;
   color: #fff;
+}
+
+/* Feed back */
+
+.citation {
+  background: #2e2100;
+  margin-top: 135px;
+  width: 1440px;
+  height: 380px;
+}
+
+.citation .peter-moor .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
 }
