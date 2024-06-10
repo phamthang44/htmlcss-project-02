@@ -427,8 +427,16 @@ a {
   padding: 96px 0;
   background: #2e2100;
 }
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
 .feedback-item {
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .feedback-item .info .avatar {
@@ -484,4 +492,74 @@ a {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
+}
+
+/* Features */
+
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .image {
+  display: flex;
+  gap: 0 30px;
+}
+
+.features .image img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .image img:first-child {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+
+.features .content .cta-btn {
+  margin-top: 32px;
+  min-width: 137px;
+  color: #fff;
+}
+
+.features .btn:hover {
+  background: var(--primary-color);
+}
+
+.features-2nd {
+  margin-top: 70px;
+}
+
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+  width: 49%;
+}
+
+.features-2nd .image img {
+  width: 470px;
+  height: 440px;
 }
