@@ -70,7 +70,7 @@ body {
 
 .main-content {
   width: 1170px;
-  max-width: 100% - 48px;
+  max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -562,4 +562,121 @@ a {
 .features-2nd .image img {
   width: 470px;
   height: 440px;
+}
+/* Blog */
+
+.blog {
+  background: #fffcf4;
+  margin-top: 135px;
+  padding: 96px 0;
+}
+
+.blog-top {
+  text-align: center;
+}
+
+.blog .blog-top .desc {
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  width: 448px;
+  margin: 16px auto auto;
+}
+
+.blog .blog-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+  overflow: hidden;
+}
+
+.blog .item {
+  width: calc(33.33% - 20px);
+  border-radius: 16px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.blog .item:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog .blog-list .thumb {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.blog .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blog .item .date {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 12px;
+  position: relative;
+}
+.blog .item .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.blog .item .date::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: -27px;
+  display: inline-block;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blog .title a {
+  display: inline-block;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.blog .item .btn {
+  font-size: 1.4rem;
+}
+
+.blog .btn:hover {
+  background: var(--primary-color);
+}
+
+.blog .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.blog .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blog .dots .dot.active {
+  background: var(--primary-color);
+  cursor: default;
 }
